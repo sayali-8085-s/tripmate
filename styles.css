@@ -646,8 +646,56 @@ footer {
   }
 }
 /* ........navbar......... */
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color:white;
+  overflow: hidden;
+  
+}
+nav h1{
+  font-size: 40px;
+}
+nav a{
+  color: #0a0a0a;
+}
+ul{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap:40px;
+}
+nav ul li a:hover{
+  color: #2887ff;}
+.three i{
+  display:none;
+}
+@media screen and (max-width:650px) {
+  .three i{
+      display: block;
+  }
+  nav ul{
+      display: none;
+      position: absolute;
+      top: 100px;
+      background-color:white;
+      width: 100%;
+      z-index: 99999999;
+  }
+}
+#click:checked~nav ul{
+  display: block;
+}
 
- nav{
+nav ul li{
+  padding: 10px;
+}
+
+#click{
+  display: none;
+} 
+ /* nav{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -685,7 +733,7 @@ ul{
       top: 100px;
       background-color:white;
       width: 100%;
-      z-index: 999999999;
+       z-index: 999999999; 
   }
 }
 #click:checked~nav ul{
@@ -700,7 +748,7 @@ nav ul li a:hover{
 }
 #click{
   display: none;
-}  
+}   */
 /* ...................contact......................... */
 .contact{
   display: grid;
