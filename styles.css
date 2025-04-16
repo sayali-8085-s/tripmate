@@ -36,18 +36,21 @@
   outline: none;
   border: none;
   font-size: 1rem;
-  /* white-space: nowrap;  */
+
   color: #ffffff;;
-  background-color: #2887ff;
+   background-color: #2887ff; 
   border-radius: 5rem;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  color: #0a0a0a;
+  
   cursor: pointer;
   
 
 }
 
 .btn:hover {
-  background-color: #2887ff;
+  background-color: #066ce9;
+  
 }
 
 
@@ -653,6 +656,8 @@ nav{
   background-color:white;
   overflow: hidden;
   
+  
+  
 }
 nav h1{
   font-size: 40px;
@@ -670,6 +675,15 @@ nav ul li a:hover{
   color: #2887ff;}
 .three i{
   display:none;
+}
+nav.first{
+  border: 1px solid black;
+  height: 40px;
+  width: 50px;
+  background-color: #066ce9;
+}
+nav li1:hover{
+  background-color: blue;
 }
 @media screen and (max-width:650px) {
   .three i{
@@ -695,60 +709,7 @@ nav ul li{
 #click{
   display: none;
 } 
- /* nav{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color:white;
-  overflow: hidden;
-  height: 70px;
-  position: sticky;
-  top:0px;
-  z-index: 9999999999;
-  
-  
-}
-nav h1{
-  font-size: 40px;
-}
-nav a{
-  color: #0a0a0a;
-}
-ul{
-  display: flex;
-  list-style: none;
-  gap:40px;
-  margin-left: 150px;
-}
-.three i{
-  display:none;
-}
-@media screen and (max-width:650px) {
-  .three i{
-      display: block;
-  }
-  nav ul{
-      display: none;
-      position: absolute;
-      top: 100px;
-      background-color:white;
-      width: 100%;
-       z-index: 999999999; 
-  }
-}
-#click:checked~nav ul{
-  display: block;
-}
-
-nav ul li{
-  padding: 10px;
-}
-nav ul li a:hover{
-  color: #2887ff;
-}
-#click{
-  display: none;
-}   */
+ 
 /* ...................contact......................... */
 .contact{
   display: grid;
